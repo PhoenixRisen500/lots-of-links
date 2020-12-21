@@ -1,0 +1,75 @@
+:root{
+    --grid-item-width: 23.5vw;
+    --colors1: yellow;
+    --colors2: black;
+}
+
+a, a:visited, a:active {color: var(--colors2);}
+a:hover {color: var(--colors2); background-color: var(--colors1)}
+
+#to-do-list-div {
+    color:black;
+    background-color: rgba(0, 255, 191, 0.219);
+    width: var(--grid-item-width);
+    font-family: monospace;
+    font-size: larger;
+    }
+
+h1, h2::before{
+    content: "•\2001";
+}
+
+h1, h2::after{
+    content: "\2001•"
+}
+
+h1, h2 {
+    text-align: center;
+    background-color: var(--colors2);
+    color: var(--colors1);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+h3::before {
+    content: "••••\2001";
+}
+h3::after{
+    content: "\2001••••"
+}
+
+h3, h4, h5, h6 {
+    background-color: rgba(0, 0, 0, .7);
+    color: var(--colors1);
+    width: var(--grid-item-width);
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    }
+
+ul, li {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 20px;
+}
+
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, var(--grid-item-width));
+    grid-gap: 10px;
+    margin: auto;
+}
+
+.grid-item-languages, 
+.grid-item-school, 
+.grid-item-management, 
+.grid-item-artificial-intelligence {
+    width: var(--grid-item-width);
+    border: 2px solid var(--colors2);
+    margin-left: 10px;
+    background-image: url('C:/Users/user2020/Desktop/copy of index.html/images/marble.jpg');
+    background-repeat: repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
